@@ -11,3 +11,4 @@ Changes:
 Adding README file
 1.0 adding HTML, CSS, and JAVA files
 1.1 Adding link to wireframe (https://drive.google.com/file/d/1gHS1rRRJcJMx3Z4V6UB2rTfP8NwOO4Qe/view?usp=sharing) and submissions for formspree. Bootstrap enabled and formatting started. ReadMe description updated. 
+1.2 Added slight CSS custom styling, made iframes responsive, added WIP and product layouts
