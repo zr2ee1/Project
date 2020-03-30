@@ -6,9 +6,11 @@ Ideas for future improvement:
 1. Enable users to add new raw materials and products into the system 
 2. Enable data submissions to pull and post from database
 3. New features and functionality with user feedback
+4. Add camera support for Barcode input via QuaggaJS plugin (https://serratus.github.io/quaggaJS/)
 
 Changes:
 Adding README file
 1.0 adding HTML, CSS, and JAVA files
 1.1 Adding link to wireframe (https://drive.google.com/file/d/1gHS1rRRJcJMx3Z4V6UB2rTfP8NwOO4Qe/view?usp=sharing) and submissions for formspree. Bootstrap enabled and formatting started. ReadMe description updated. 
 1.2 Added slight CSS custom styling, made iframes responsive, added WIP and product layouts
+1.3 additional theming, modal support for submit function. Light commenting for section breakup
