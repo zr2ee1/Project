@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+<!-- Metadata and stylesheets -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Work In Progress</title>
@@ -8,8 +9,8 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow p-1 mb-1 bg-light rounded">
         <a class="navbar-brand" href="#">
         <img src="https://cdn.shopify.com/s/files/1/1970/5485/files/Gallant-Bullets-Transparent-Crop-1-Off-Black-818_6b4438ad-cd89-4b4f-b4ac-9435a6a5d791_205x@2x.png?v=1493842455" width="30" height="30" class="d-inline-block align-top" alt="Logo">
         Inventory Management System
@@ -35,27 +36,55 @@
         </form>
       </div>
     </nav>
-
+<!-- SideBar Form -->
 <div class="container-fluid">
   <div class="row">
-    <div class="col-3">
+    <div class="col-lg-2 col-xs-12 shadow p-1 mb-1 bg-light rounded">
       <form action="https://formspree.io/xyypbjoj" method="post">
         <div class="form-group">
         <label for="Material">Scan Code</label>
+        <!-- Add Barcode QuaggaJS barcode scanner option like this: https://www.youtube.com/watch?v=Y5YH6IJFnfc -->
         <input name="scan" type="text" required="required" placeholder="Scan in WIP ID"/>
         <br />
         <label>Quantity</label>
-          <input name="quantity", type="number" required="required" placeholder="Enter quantity"/>
+          <input name="quantity", type="number" required="required" placeholder="Qty" min="1" max="50"/>
         <br />
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <!-- Button trigger modal -->
+        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Submit
+        </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Success!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Your Submission has been recorded
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </form>
     </div>
     <div class="col">
-      <iframe height="700" width="100%" src="https://datastudio.google.com/embed/reporting/0B62rA22jdEwKRjdSQy1fVFdnTVU/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe width="100%" height="885" src="https://datastudio.google.com/embed/reporting/0B62rA22jdEwKRjdSQy1fVFdnTVU/page/jyCe" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
 </div>
+<!-- Associated scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
